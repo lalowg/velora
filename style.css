@@ -638,3 +638,5 @@ html:not(.js) .scene { position: relative; opacity: 1; visibility: visible; min-
 }
 
 @media (max-width: 420px) { .lb__ripple-x { display: none; } .lb { gap: 8px; } }
+
+@media (max-width: 480px) { .scene--1 .kicker { white-space: nowrap; font-size: .6rem; letter-spacing: .2em; gap: .7em; } .scene--1 .kicker::before { width: 1.4em; } }
