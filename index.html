@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VÉLORA — Wear the Unseen · Penumbra, Collection VII</title>
+<meta name="description" content="VÉLORA is an avant-garde fashion house told as an interactive film. Touch the silk, scrub through Penumbra — Collection VII — study twelve looks and request a private viewing.">
+<meta name="theme-color" content="#0A0908">
+<link rel="canonical" href="https://velora-theta-hazel.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VÉLORA — Wear the Unseen">
+<meta property="og:description" content="An avant-garde fashion house told as an interactive film: living silk, twelve looks lit from one side, a coat studied stitch by stitch.">
+<meta property="og:url" content="https://velora-theta-hazel.vercel.app/">
+<meta property="og:image" content="https://velora-theta-hazel.vercel.app/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VÉLORA — Wear the Unseen">
+<meta name="twitter:description" content="An avant-garde fashion house told as an interactive film.">
+<meta name="twitter:image" content="https://velora-theta-hazel.vercel.app/og.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&family=Jost:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hdr" id="top">
+  <a class="hdr__brand" href="#film" aria-label="VÉLORA — back to the film">
+    <svg class="mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M6 39C18 29 44 27 58 34" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".55"/><path d="M15 13h10l9.6 34.5-2.7 5.2z" fill="currentColor"/><path d="M48 13h2.4L33.9 52.6l-1.2-2.4z" fill="currentColor"/><path d="M11 12h18v1.3H11zM44 12h10v1.3H44z" fill="currentColor"/></svg>
+    <span class="hdr__word">VÉLORA</span>
+  </a>
+  <nav class="hdr__nav" aria-label="Primary">
+    <ul>
+      <li><a href="#film">Film</a></li>
+      <li><a href="#looks">Looks</a></li>
+      <li><a href="#object">The Coat</a></li>
+      <li><a href="#atelier">Atelier</a></li>
+      <li><a href="#archive">Archive</a></li>
+    </ul>
+  </nav>
+  <p class="hdr__tc" aria-hidden="true"><span>TC</span> <span data-tc>00:00:00:00</span></p>
+  <a class="hdr__cta" href="#appointment">Private viewing</a>
+  <button class="hdr__menu" type="button" aria-expanded="false" aria-controls="menu"><span class="hdr__menu-l">Menu</span><span class="hdr__menu-i" aria-hidden="true"></span></button>
+  <span class="hdr__progress" aria-hidden="true"><span></span></span>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Menu">
+    <ol class="menu__list">
+      <li><a href="#film"><span>01</span>The film</a></li>
+      <li><a href="#looks"><span>02</span>The looks</a></li>
+      <li><a href="#object"><span>03</span>Coat No. 7</a></li>
+      <li><a href="#atelier"><span>04</span>Atelier</a></li>
+      <li><a href="#archive"><span>05</span>Archive</a></li>
+      <li><a href="#appointment"><span>06</span>Private viewing</a></li>
+    </ol>
+  </nav>
+  <p class="menu__foot">Penumbra · Collection VII · Autumn–Winter 2026</p>
+</div>
+
+<main id="main" tabindex="-1">
+
+<!-- REEL 01 — THE FILM ------------------------------------------------ -->
+<section class="film" id="film" aria-labelledby="film-title" data-scene="0">
+  <div class="film__stage">
+    <div class="silk" aria-hidden="true">
+      <canvas class="silk__canvas"></canvas>
+      <svg class="silk__fallback" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <defs>
+          <linearGradient id="sf-fold" x1="0" x2="1"><stop offset="0" class="sf-s" stop-opacity="0"/><stop offset=".42" class="sf-s" stop-opacity=".9"/><stop offset=".5" class="sf-h" stop-opacity=".7"/><stop offset=".6" class="sf-b" stop-opacity=".6"/><stop offset="1" class="sf-s" stop-opacity="0"/></linearGradient>
+          <radialGradient id="sf-v" cx=".5" cy=".45" r=".75"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".7"/></radialGradient>
+        </defs>
+        <rect class="sf-base" width="1600" height="900"/>
+        <path d="M-80 0C120 260 40 560 260 900H520C320 560 380 260 200 0Z" fill="url(#sf-fold)"/>
+        <path d="M300 0C520 300 420 600 700 900H960C700 600 760 300 560 0Z" fill="url(#sf-fold)"/>
+        <path d="M700 0C900 240 860 560 1080 900H1320C1100 560 1140 260 960 0Z" fill="url(#sf-fold)"/>
+        <path d="M1120 0C1300 280 1240 600 1460 900H1700C1480 600 1540 300 1380 0Z" fill="url(#sf-fold)"/>
+        <rect width="1600" height="900" fill="url(#sf-v)"/>
+      </svg>
+    </div>
+    <div class="film__veil" aria-hidden="true"></div>
+    <span class="film__cursor" aria-hidden="true"><span>Touch</span></span>
+    <div class="curtain curtain--t" aria-hidden="true"></div>
+    <div class="curtain curtain--b" aria-hidden="true"></div>
+    <div class="matte matte--t" aria-hidden="true"></div>
+    <div class="matte matte--b" aria-hidden="true"></div>
+
+    <div class="lb lb--top" aria-hidden="true">
+      <span class="lb__meta">SC. <b data-scene-num>I</b> / IV</span>
+      <span class="lb__title" data-scene-name>Wear the Unseen</span>
+      <span class="lb__meta">Penumbra · AW26</span>
+    </div>
+
+    <div class="scenes">
+      <div class="scene scene--1">
+        <p class="kicker">VÉLORA presents <i aria-hidden="true">·</i> Collection VII</p>
+        <h1 id="film-title" class="t-hero"><span class="sr-only">Wear the Unseen</span><span class="slice-wrap" aria-hidden="true"><span class="sl-line sl-line--a" data-slice>Wear the</span><span class="sl-line sl-line--b" data-slice>Unseen</span></span></h1>
+        <p class="subtitle">Move across the silk. It remembers every touch.</p>
+      </div>
+
+      <div class="scene scene--2">
+        <figure class="panel" data-look-panel="0"><figcaption>Look I — Vesper · oxblood charmeuse</figcaption></figure>
+        <div class="scene__copy">
+          <p class="kicker">Scene II</p>
+          <h2 class="t-scene"><span class="mask-line"><span>Fabric</span></span><span class="mask-line"><span><em>remembers</em></span></span></h2>
+        </div>
+        <p class="subtitle">A garment keeps the shape of the body long after the body has left the room.</p>
+      </div>
+
+      <div class="scene scene--3">
+        <figure class="panel" data-look-panel="11"><figcaption>Look XII — The Unseen · black velvet</figcaption></figure>
+        <div class="scene__copy">
+          <p class="kicker">Scene III</p>
+          <h2 class="t-scene"><span class="sr-only">Cut from shadow</span><span class="slice-wrap" aria-hidden="true"><span class="sl-line" data-slice>Cut from</span><span class="sl-line sl-line--i" data-slice>shadow.</span></span></h2>
+        </div>
+        <p class="subtitle">Every Penumbra piece begins as one line of shadow on the cutting table. Then we cut toward it.</p>
+      </div>
+
+      <div class="scene scene--4">
+        <p class="kicker">Collection VII</p>
+        <h2 class="t-card">Penumbra</h2>
+        <p class="card__sub">Autumn–Winter 2026 <i aria-hidden="true">·</i> Twelve looks <i aria-hidden="true">·</i> One light source</p>
+        <a class="btn btn--ghost" href="#looks">Enter the looks</a>
+        <p class="subtitle">Shot as a film. Worn as a secret.</p>
+      </div>
+    </div>
+
+    <div class="lb lb--bottom">
+      <span class="lb__track" aria-hidden="true"><span></span><i style="left:0%"></i><i style="left:37.5%"></i><i style="left:65%"></i><i style="left:93%"></i></span>
+      <div class="lb__scenes" role="group" aria-label="Film scenes">
+        <button type="button" class="scene-btn" data-go="0" aria-label="Scene I: Wear the Unseen" aria-current="true">I</button>
+        <button type="button" class="scene-btn" data-go="1" aria-label="Scene II: Fabric remembers">II</button>
+        <button type="button" class="scene-btn" data-go="2" aria-label="Scene III: Cut from shadow">III</button>
+        <button type="button" class="scene-btn" data-go="3" aria-label="Scene IV: Penumbra title card">IV</button>
+      </div>
+      <p class="lb__hint"><span class="lb__hint-cine">Scroll to play · </span>drag across the silk</p>
+      <button type="button" class="lb__ripple" data-ripple aria-label="Disturb the silk"><span aria-hidden="true">◌</span> Disturb<span class="lb__ripple-x"> the silk</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- REEL 02 — THE LOOKS ----------------------------------------------- -->
+<section class="looks" id="looks" aria-labelledby="looks-title" data-theme="dark">
+  <div class="looks__pin">
+    <div class="looks__row">
+      <header class="looks__head">
+        <p class="reel"><span>Reel 02</span><span aria-hidden="true">00:01:04:12</span></p>
+        <h2 id="looks-title" class="t-section"><span class="wipe">Twelve looks,</span><span class="wipe"><em>lit from one side.</em></span></h2>
+        <p class="looks__intro">Penumbra is cut for half-light — the hour when a silhouette says more than any detail. Select a look to study it frame by frame.</p>
+        <p class="note">Illustrative renders: original SVG drawings, not photography.</p>
+      </header>
+      <ol class="looks__track" data-track aria-label="Penumbra looks"></ol>
+    </div>
+    <div class="looks__foot">
+      <p class="looks__count" aria-hidden="true"><span data-look-count>01</span> / 12</p>
+      <span class="looks__bar" aria-hidden="true"><span></span></span>
+      <div class="looks__arrows">
+        <button type="button" data-track-prev aria-label="Previous look">←</button>
+        <button type="button" data-track-next aria-label="Next look">→</button>
+      </div>
+    </div>
+    <noscript><p class="note">The look renders are drawn with JavaScript. Enable it to see the collection.</p></noscript>
+  </div>
+</section>
+
+<!-- REEL 03 — THE OBJECT ---------------------------------------------- -->
+<section class="obj" id="object" aria-labelledby="obj-title" data-theme="light">
+  <div class="obj__visual">
+    <span class="obj__num" aria-hidden="true">7</span>
+    <div class="obj__stage" data-colour="noir" tabindex="0" role="group" aria-roledescription="detail viewer" aria-label="Coat No. 7 render with a detail loupe. Use the arrow keys to move the loupe, or choose a construction detail from the list.">
+    </div>
+    <p class="note obj__note">Illustrative render · hover, tap or use the arrow keys to inspect the cloth</p>
+  </div>
+  <div class="obj__info">
+    <p class="reel"><span>Reel 03</span><span aria-hidden="true">00:02:10:03</span></p>
+    <h2 id="obj-title" class="t-section"><span class="wipe">Coat No. 7</span><span class="wipe"><em>Eclipse</em></span></h2>
+    <p class="lede">The house coat of the season. Double-faced wool melton, a stand collar that frames the jaw, and a waist pressed in by hand so the skirt falls like a held breath.</p>
+    <fieldset class="swatches">
+      <legend>Colourway</legend>
+      <label class="sw sw--noir"><input type="radio" name="colourway" value="noir" checked><span class="sw__chip" aria-hidden="true"></span><span class="sw__l">Noir</span></label>
+      <label class="sw sw--oxblood"><input type="radio" name="colourway" value="oxblood"><span class="sw__chip" aria-hidden="true"></span><span class="sw__l">Oxblood</span></label>
+      <label class="sw sw--bone"><input type="radio" name="colourway" value="bone"><span class="sw__chip" aria-hidden="true"></span><span class="sw__l">Bone</span></label>
+      <p class="sw__name" aria-live="polite" data-swatch-name>Noir melton</p>
+    </fieldset>
+    <ol class="details" aria-label="Construction details">
+      <li><button type="button" data-detail aria-pressed="false"><span>01</span>Stand collar</button></li>
+      <li><button type="button" data-detail aria-pressed="false"><span>02</span>Roped shoulder</button></li>
+      <li><button type="button" data-detail aria-pressed="false"><span>03</span>Horn buttons</button></li>
+      <li><button type="button" data-detail aria-pressed="false"><span>04</span>Pressed waist</button></li>
+      <li><button type="button" data-detail aria-pressed="false"><span>05</span>Weighted hem</button></li>
+    </ol>
+    <p class="detail-note" aria-live="polite" data-detail-note>Choose a detail to send the loupe straight to it.</p>
+    <dl class="spec">
+      <div><dt>Outer</dt><dd>Double-faced wool melton</dd></div>
+      <div><dt>Lining</dt><dd>Silk habotai, oxblood</dd></div>
+      <div><dt>Made</dt><dd>Hand-finished in the house atelier</dd></div>
+      <div><dt>Price</dt><dd>On appointment</dd></div>
+    </dl>
+    <div class="obj__actions">
+      <button type="button" class="btn btn--solid" data-request="4">Request a fitting</button>
+      <button type="button" class="btn btn--ghost" data-loupe aria-pressed="true">Loupe on</button>
+    </div>
+  </div>
+</section>
+
+<!-- REEL 04 — THE ATELIER --------------------------------------------- -->
+<section class="atelier" id="atelier" aria-labelledby="atelier-title" data-theme="dark">
+  <header class="atelier__head">
+    <p class="reel"><span>Reel 04</span><span aria-hidden="true">00:02:58:20</span></p>
+    <h2 id="atelier-title" class="t-section"><span class="wipe">From croquis</span><span class="wipe"><em>to coat.</em></span></h2>
+  </header>
+  <div class="atelier__grid">
+    <div class="board-wrap">
+      <figure class="board s1" data-board>
+        <svg viewBox="0 0 600 720" role="img" aria-label="Pattern-cutting board showing the current stage of making Coat No. 7" focusable="false">
+          <defs>
+            <pattern id="mat" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#EDE6DA" stroke-opacity=".07"/></pattern>
+            <pattern id="mat5" width="120" height="120" patternUnits="userSpaceOnUse"><path d="M120 0H0V120" fill="none" stroke="#EDE6DA" stroke-opacity=".14"/></pattern>
+            <linearGradient id="bd-coat" x1="0" x2="1"><stop offset="0" stop-color="#060505"/><stop offset=".3" stop-color="#1d1b19"/><stop offset=".62" stop-color="#4b4642"/><stop offset=".82" stop-color="#1d1b19"/><stop offset="1" stop-color="#060505"/></linearGradient>
+            <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#EDE6DA" fill-opacity=".7"/></marker>
+          </defs>
+          <rect width="600" height="720" fill="#100e0d"/>
+          <rect width="600" height="720" fill="url(#mat)"/>
+          <rect width="600" height="720" fill="url(#mat5)"/>
+          <g class="bt-ruler"><path d="M0 12H600" stroke="#EDE6DA" stroke-opacity=".25"/><path d="M0 0V720" stroke="#EDE6DA" stroke-opacity=".0"/></g>
+          <g class="l1" fill="none" stroke="#EDE6DA" stroke-opacity=".8" stroke-width="1.3" stroke-linecap="round">
+            <path pathLength="1" d="M300 40V690" stroke-opacity=".25" stroke-dasharray="4 6"/>
+            <ellipse pathLength="1" cx="300" cy="78" rx="21" ry="28"/>
+            <path pathLength="1" d="M296 106L294 126"/>
+            <path pathLength="1" d="M244 138Q300 124 356 140"/>
+            <path pathLength="1" d="M300 120L262 132Q244 140 246 156L258 272Q246 312 226 372L186 572Q300 594 414 572L374 372Q354 312 342 272L354 156Q356 140 338 132Z"/>
+            <path pathLength="1" d="M303 122L264 135Q248 143 250 158L262 270Q250 314 230 374L192 568" stroke-opacity=".35"/>
+            <path pathLength="1" d="M246 156Q236 260 238 380M354 156Q366 260 366 380"/>
+            <path pathLength="1" d="M286 588L282 684M314 588L322 684"/>
+            <path pathLength="1" d="M258 272Q300 282 342 272" stroke-opacity=".5"/>
+          </g>
+          <g class="l2" fill="none" stroke="#EDE6DA" stroke-width="1.2">
+            <path class="pc" pathLength="1" d="M60 120L140 100Q160 128 186 136L194 300Q182 330 180 360L222 640L50 650L74 360Q74 330 66 300Z"/>
+            <path class="pc" pathLength="1" d="M250 112L330 104L410 118L416 300Q408 330 408 360L446 640L246 652L270 360Q266 330 260 300Z"/>
+            <path class="pc" pathLength="1" d="M462 160Q512 76 562 160L552 396L472 396Z"/>
+            <path class="pc" pathLength="1" d="M458 476Q510 446 566 476L563 512Q510 484 461 512Z"/>
+            <g class="gl" stroke-opacity=".7"><path d="M130 200V560" marker-start="url(#arr)" marker-end="url(#arr)"/><path d="M338 200V560" marker-start="url(#arr)" marker-end="url(#arr)"/><path d="M512 190V370" marker-start="url(#arr)" marker-end="url(#arr)"/></g>
+            <g class="nt" stroke-opacity=".8"><path d="M186 136l8 -4M194 300l8 0M74 360l-8 0M260 300l-8 0M408 360l8 0M462 300l-8 0M552 300l8 0"/></g>
+            <g class="bt" fill="#EDE6DA" stroke="none">
+              <text x="98" y="420" transform="rotate(-90 98 420)">FRONT · CUT 2</text>
+              <text x="306" y="430" transform="rotate(-90 306 430)">BACK · CUT 1 ON FOLD</text>
+              <text x="484" y="300" transform="rotate(-90 484 300)">SLEEVE · CUT 2</text>
+              <text x="470" y="540">COLLAR · CUT 2</text>
+            </g>
+          </g>
+          <g class="l3" fill="none" stroke="#c9727a" stroke-width="1.1" stroke-dasharray="6 5">
+            <path d="M52 114L140 92Q162 120 192 128L202 300Q190 330 188 360L232 648L42 659L66 360Q66 330 58 300Z"/>
+            <path d="M242 104L330 96L418 110L424 300Q416 330 416 360L456 648L236 660L262 360Q258 330 252 300Z"/>
+            <path d="M454 160Q512 64 570 160L560 404L464 404Z"/>
+            <path d="M452 470Q510 436 572 470L569 520Q510 492 455 520Z"/>
+            <g class="bt bt--r" fill="#c9727a" stroke="none" stroke-dasharray="0">
+              <text x="40" y="684">1.5 CM SEAM ALLOWANCE</text>
+              <text x="246" y="684">9 CM HEM TURN-UP</text>
+              <text x="456" y="430">EASE 2 CM</text>
+            </g>
+            <g stroke-dasharray="0" stroke="#EDE6DA" stroke-opacity=".8"><circle cx="232" cy="648" r="5"/><circle cx="242" cy="662" r="5"/><path d="M236 650L260 628M246 659L262 632"/></g>
+          </g>
+          <g class="l4">
+            <path d="M300 128L264 140Q248 148 250 162L260 270Q258 300 262 312Q236 380 206 560Q300 580 394 560Q364 380 338 312Q342 300 340 270L350 162Q352 148 336 140Z" fill="url(#bd-coat)"/>
+            <path d="M286 104h28v32h-28z" fill="url(#bd-coat)"/>
+            <path d="M300 128L264 140Q248 148 250 162L260 270Q258 300 262 312Q236 380 206 560Q300 580 394 560Q364 380 338 312Q342 300 340 270L350 162Q352 148 336 140Z" fill="none" stroke="#EDE6DA" stroke-opacity=".5"/>
+            <g fill="#8a7462"><circle cx="290" cy="196" r="3.4"/><circle cx="310" cy="196" r="3.4"/><circle cx="290" cy="226" r="3.4"/><circle cx="310" cy="226" r="3.4"/><circle cx="290" cy="270" r="3.4"/><circle cx="310" cy="270" r="3.4"/></g>
+            <path d="M262 312Q300 318 338 312M300 140V566" stroke="#000" stroke-opacity=".5" fill="none"/>
+            <path d="M280 330Q262 450 240 556M322 330Q340 450 362 556" stroke="#000" stroke-opacity=".45" stroke-width="3" fill="none"/>
+            <text class="bt" x="300" y="620" text-anchor="middle" fill="#EDE6DA">COAT No. 7 · ECLIPSE</text>
+          </g>
+        </svg>
+        <figcaption><span data-step-cap>Stage 01 · Croquis</span></figcaption>
+      </figure>
+    </div>
+    <ol class="steps">
+      <li class="step is-on" data-step="1"><span class="step__n">01</span><h3>Croquis</h3><p>A single figure, drawn ten heads tall. We look for the line the garment will make in shadow, not the one it makes in light.</p></li>
+      <li class="step" data-step="2"><span class="step__n">02</span><h3>Pattern</h3><p>The line becomes flat pieces — front, back, sleeve, collar. Grain lines are set so the cloth falls, rather than hangs.</p></li>
+      <li class="step" data-step="3"><span class="step__n">03</span><h3>Toile &amp; cut</h3><p>Cut first in calico, fitted on the stand, corrected in pencil. Only then does the melton meet the shears.</p></li>
+      <li class="step" data-step="4"><span class="step__n">04</span><h3>Drape</h3><p>Assembled, pressed, weighted at the hem. The coat is finished when it moves a moment after you do.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- MANIFESTO ---------------------------------------------------------- -->
+<section class="manifesto" id="manifesto" aria-labelledby="manifesto-title" data-theme="dark">
+  <h2 id="manifesto-title" class="sr-only">Manifesto</h2>
+  <p class="reel"><span>Interlude</span><span aria-hidden="true">00:03:31:00</span></p>
+  <blockquote class="manifesto__text"><p data-words>We make clothes for the moment <em>before</em> you are seen — the held breath, the closing door, the half-light of a corridor. Vélora is cut from that pause.</p></blockquote>
+  <p class="manifesto__sign">House of Vélora · Paris</p>
+</section>
+
+<!-- REEL 05 — ARCHIVE --------------------------------------------------- -->
+<section class="archive" id="archive" aria-labelledby="archive-title" data-theme="dark">
+  <header class="archive__head">
+    <p class="reel"><span>Reel 05</span><span aria-hidden="true">00:03:52:16</span></p>
+    <h2 id="archive-title" class="t-section"><span class="wipe">The archive</span></h2>
+    <p class="archive__intro">Seven collections, each one a short film and every look a single frame. A fictional archive for a fictional house.</p>
+  </header>
+  <ol class="archive__list">
+    <li class="arow" data-thumb="0"><button type="button" class="arow__btn" aria-expanded="false" aria-controls="arow-7"><span class="arow__n">VII</span><span class="arow__t">Penumbra</span><span class="arow__s">AW26</span><span class="arow__c">12 looks</span><span class="arow__i" aria-hidden="true"></span></button>
+      <div class="arow__panel" id="arow-7" hidden><div class="arow__thumb"></div><p>Half-light tailoring and liquid silk, shown as a four-scene film. The current collection.</p></div></li>
+    <li class="arow" data-thumb="9"><button type="button" class="arow__btn" aria-expanded="false" aria-controls="arow-6"><span class="arow__n">VI</span><span class="arow__t">Salt Hours</span><span class="arow__s">SS26</span><span class="arow__c">14 looks</span><span class="arow__i" aria-hidden="true"></span></button>
+      <div class="arow__panel" id="arow-6" hidden><div class="arow__thumb"></div><p>Bleached linens and sheer layers, left to dry stiff in sea air before they were cut.</p></div></li>
+    <li class="arow" data-thumb="5"><button type="button" class="arow__btn" aria-expanded="false" aria-controls="arow-5"><span class="arow__n">V</span><span class="arow__t">The Quiet Veil</span><span class="arow__s">AW25</span><span class="arow__c">11 looks</span><span class="arow__i" aria-hidden="true"></span></button>
+      <div class="arow__panel" id="arow-5" hidden><div class="arow__thumb"></div><p>Tulle veils over severe wool. Ceremony, with the ceremony taken out.</p></div></li>
+    <li class="arow" data-thumb="10"><button type="button" class="arow__btn" aria-expanded="false" aria-controls="arow-4"><span class="arow__n">IV</span><span class="arow__t">Ash Garden</span><span class="arow__s">SS25</span><span class="arow__c">13 looks</span><span class="arow__i" aria-hidden="true"></span></button>
+      <div class="arow__panel" id="arow-4" hidden><div class="arow__thumb"></div><p>Smoke-dyed cotton and wide brims for long, pale afternoons.</p></div></li>
+    <li class="arow" data-thumb="6"><button type="button" class="arow__btn" aria-expanded="false" aria-controls="arow-3"><span class="arow__n">III</span><span class="arow__t">Night Lacquer</span><span class="arow__s">AW24</span><span class="arow__c">10 looks</span><span class="arow__i" aria-hidden="true"></span></button>
+      <div class="arow__panel" id="arow-3" hidden><div class="arow__thumb"></div><p>Hand-lacquered capes and black-on-black embroidery that only shows when you move.</p></div></li>
+    <li class="arow" data-thumb="2"><button type="button" class="arow__btn" aria-expanded="false" aria-controls="arow-2"><span class="arow__n">II</span><span class="arow__t">Mute</span><span class="arow__s">SS24</span><span class="arow__c">9 looks</span><span class="arow__i" aria-hidden="true"></span></button>
+      <div class="arow__panel" id="arow-2" hidden><div class="arow__thumb"></div><p>One colour, one cloth, cut every way it would allow.</p></div></li>
+    <li class="arow" data-thumb="11"><button type="button" class="arow__btn" aria-expanded="false" aria-controls="arow-1"><span class="arow__n">I</span><span class="arow__t">Unseen</span><span class="arow__s">AW23</span><span class="arow__c">9 looks</span><span class="arow__i" aria-hidden="true"></span></button>
+      <div class="arow__panel" id="arow-1" hidden><div class="arow__thumb"></div><p>The debut: nine hooded columns, shown in a room with the lights switched off.</p></div></li>
+  </ol>
+  <div class="archive__preview" aria-hidden="true"></div>
+</section>
+
+<!-- REEL 06 — APPOINTMENT ---------------------------------------------- -->
+<section class="appt" id="appointment" aria-labelledby="appt-title" data-theme="light">
+  <div class="appt__intro">
+    <p class="reel"><span>Reel 06</span><span aria-hidden="true">00:04:06:09</span></p>
+    <h2 id="appt-title" class="t-section"><span class="wipe">A private</span><span class="wipe"><em>viewing.</em></span></h2>
+    <p class="lede">Penumbra is shown by appointment — one client, one hour, the whole collection on the rail. Tell us where and when.</p>
+    <ul class="salons">
+      <li><span class="salons__c">Paris</span><span class="salons__d">Haut Marais</span></li>
+      <li><span class="salons__c">Milan</span><span class="salons__d">Brera</span></li>
+      <li><span class="salons__c">Kyoto</span><span class="salons__d">Higashiyama</span></li>
+    </ul>
+    <p class="note">Salons, hours and availability are fictional.</p>
+  </div>
+
+  <form class="form" novalidate aria-describedby="form-demo">
+    <div class="form__summary" tabindex="-1" hidden></div>
+    <div class="field">
+      <label for="f-name">Full name</label>
+      <input id="f-name" name="name" type="text" autocomplete="name" required>
+      <p class="err" id="err-name" hidden></p>
+    </div>
+    <div class="field">
+      <label for="f-email">Email</label>
+      <input id="f-email" name="email" type="email" autocomplete="email" required>
+      <p class="err" id="err-email" hidden></p>
+    </div>
+    <fieldset class="field field--salon" id="f-salon">
+      <legend>Salon</legend>
+      <div class="opts">
+        <label class="opt"><input type="radio" name="salon" value="Paris"><span>Paris</span></label>
+        <label class="opt"><input type="radio" name="salon" value="Milan"><span>Milan</span></label>
+        <label class="opt"><input type="radio" name="salon" value="Kyoto"><span>Kyoto</span></label>
+      </div>
+      <p class="err" id="err-salon" hidden></p>
+    </fieldset>
+    <div class="field">
+      <label for="f-date">Preferred date</label>
+      <input id="f-date" name="date" type="date" required>
+      <p class="err" id="err-date" hidden></p>
+    </div>
+    <fieldset class="field field--looks">
+      <legend>Looks you would like on the rail <span>(optional)</span></legend>
+      <div class="chips" data-chips></div>
+    </fieldset>
+    <div class="field">
+      <label for="f-msg">Anything we should know <span>(optional)</span></label>
+      <textarea id="f-msg" name="message" rows="3"></textarea>
+    </div>
+    <div class="field field--check">
+      <label class="check"><input id="f-consent" name="consent" type="checkbox"><span>I agree to be contacted about this viewing.</span></label>
+      <p class="err" id="err-consent" hidden></p>
+    </div>
+    <button type="submit" class="btn btn--solid btn--wide">Request a viewing</button>
+    <p class="form__demo" id="form-demo">Portfolio demo — this form never leaves your browser.</p>
+  </form>
+  <div class="form__done" hidden tabindex="-1">
+    <p class="reel"><span>Request noted</span></p>
+    <h3 class="form__done-t">On paper only.</h3>
+    <p data-done-text></p>
+    <button type="button" class="btn btn--ghost" data-reset>Start again</button>
+  </div>
+</section>
+
+</main>
+
+<!-- END CREDITS -------------------------------------------------------- -->
+<footer class="credits" aria-labelledby="credits-title" data-theme="dark">
+  <div class="credits__roll">
+    <p class="credits__eyebrow">End credits</p>
+    <h2 id="credits-title" class="credits__title">A <span>VÉLORA</span> film</h2>
+    <dl class="credits__list">
+      <div><dt>Collection</dt><dd>Penumbra — Autumn–Winter 2026</dd></div>
+      <div><dt>Imagery</dt><dd>Original SVG &amp; WebGL renders</dd></div>
+      <div><dt>Typography</dt><dd>Bodoni Moda &amp; Jost</dd></div>
+    </dl>
+    <p class="credits__me"><span class="credits__role" aria-hidden="true">Direction · Design · Code</span><a class="credits__link" href="https://www.linkedin.com/in/saadbashirmarketing/" target="_blank" rel="noopener" aria-label="Saad Bashir on LinkedIn (opens in a new tab)">Designed &amp; built by Saad Bashir</a></p>
+    <p class="credits__fine">Fictional concept brand — portfolio project.</p>
+    <a class="credits__more" href="https://saadbashirportfolio.vercel.app/websites.html">More work <span aria-hidden="true">→</span></a>
+  </div>
+  <nav class="credits__nav" aria-label="Footer">
+    <ul>
+      <li><a href="#film">Film</a></li>
+      <li><a href="#looks">Looks</a></li>
+      <li><a href="#object">The Coat</a></li>
+      <li><a href="#atelier">Atelier</a></li>
+      <li><a href="#archive">Archive</a></li>
+      <li><a href="#appointment">Private viewing</a></li>
+      <li><a href="#top">Back to the opening ↑</a></li>
+    </ul>
+  </nav>
+  <p class="credits__word" aria-hidden="true">VÉLORA</p>
+</footer>
+
+<dialog class="lbx" id="lightbox" aria-labelledby="lbx-title">
+  <div class="lbx__inner">
+    <div class="lbx__art" data-lbx-art></div>
+    <div class="lbx__info">
+      <p class="lbx__count"><span data-lbx-n>Look I</span> <span aria-hidden="true">·</span> <span data-lbx-i>01 / 12</span></p>
+      <h2 id="lbx-title" class="lbx__title" data-lbx-name>Vesper</h2>
+      <p class="lbx__piece" data-lbx-piece></p>
+      <dl class="lbx__spec"><div><dt>Cloth</dt><dd data-lbx-mat></dd></div><div><dt>Colour</dt><dd data-lbx-col></dd></div></dl>
+      <p class="lbx__note" data-lbx-note></p>
+      <div class="lbx__nav">
+        <button type="button" class="btn btn--ghost" data-lbx-prev><span aria-hidden="true">←</span> Previous</button>
+        <button type="button" class="btn btn--ghost" data-lbx-next>Next <span aria-hidden="true">→</span></button>
+      </div>
+      <button type="button" class="btn btn--solid" data-lbx-request>Request this look at a viewing</button>
+      <p class="note">Illustrative render · swipe or use ← → to move between looks</p>
+    </div>
+    <button type="button" class="lbx__close" data-lbx-close aria-label="Close look details">Close <span aria-hidden="true">✕</span></button>
+  </div>
+</dialog>
+
+<div class="grain" aria-hidden="true"></div>
+</body>
+</html>

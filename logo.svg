@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="256" height="256" role="img" aria-labelledby="t">
+  <title id="t">VÉLORA</title>
+  <path d="M6 39C18 29 44 27 58 34" fill="none" stroke="#5A1A1F" stroke-width="1.6"/>
+  <path d="M15 13h10l9.6 34.5-2.7 5.2z" fill="#0A0908"/>
+  <path d="M48 13h2.4L33.9 52.6l-1.2-2.4z" fill="#0A0908"/>
+  <path d="M11 12h18v1.3H11zM44 12h10v1.3H44z" fill="#0A0908"/>
+  <path d="M30.6 56.2l2-2.2 2 2.2-2 2.2z" fill="#5A1A1F"/>
+</svg>
